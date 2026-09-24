@@ -253,6 +253,35 @@ These tests demonstrate that the reservation system maintains the expected datab
 
 ## How to Run the Project
 
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/raihan014/Seat-Reservation.git
+cd Seat-Reservation
+```
+### 2. Install Dependencies
+Install the PHP dependencies using Composer:
+composer install
+
+### 3. Configure Environment
+Create the environment configuration file:
+cp .env.example .env
+
+Then configure the database connection and other required settings in the .env file.
+
+### 4. Generate Application Key
+php artisan key:generate
+
+### 5. Run Database Migrations
+php artisan migrate
+
+### 6. Start the Laravel Development Server
+php artisan serve
+
+The API will be available at:
+http://127.0.0.1:8000
+
+Use Postman, cURL, or another API client to test the available endpoints.
 ---
 
 ## Live API
