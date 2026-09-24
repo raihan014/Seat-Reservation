@@ -253,16 +253,21 @@ These tests demonstrate that the reservation system maintains the expected datab
 
 ## How to Run the Project
 
-After configuring the environment and database, start the Laravel development server:
+---
 
-```bash
-php artisan serve
-```
-The API will be available at:
+## Live API
 
-`http://127.0.0.1:8000`
+The application is deployed on Railway and is available at:
 
-Then use an API client such as Postman or cURL to test the available endpoints.
+https://seat-reservation-production-ff0c.up.railway.app
+
+### API Endpoints
+
+- `GET /api/events` — Retrieve available events
+- `POST /api/events/{event}/reserve` — Reserve a seat
+- `POST /api/reservations/{reservation}/cancel` — Cancel a reservation
+
+All API endpoints require Sanctum Bearer Token authentication.
 
 ---
 
