@@ -288,7 +288,10 @@ Use Postman, cURL, or another API client to test the available endpoints.
 
 The application is deployed on Railway and is available at:
 
-https://seat-reservation-production-ff0c.up.railway.app
+POST https://seat-reservation-production-ff0c.up.railway.app/api/login
+    "email": "apitest@example.com",
+    "password": "TestPassword123!"
+
 
 ### API Endpoints
 
